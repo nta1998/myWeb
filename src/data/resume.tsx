@@ -10,7 +10,7 @@ export const DATA = {
   url: "https://natanel-liloz.netlify.app/",
   location: "",
   locationLink: "",
-  img:code,
+  img:"../../public/data.jpg",
   description:
     "Full-Stack Developer passionate about technology, currently pursuing a Computer Science degree and seeking opportunities to grow and solve complex problems.",
   summary:`I'm currently studying Computer Science at The Open University.\n I love learning new technologies and tackling complex challenges, and I'm eager to join a dynamic team to make a positive impact on meaningful projects.\n I thrive in collaborative environments and am always ready to explore new ideas and innovate. \nMy goal is to grow professionally and contribute creatively to the tech community and the world.`,
