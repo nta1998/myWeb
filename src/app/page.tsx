@@ -140,6 +140,7 @@ export default function Page() {
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
+                  target="_blank"
                 >
                   reach out 
                 </Link>{"\n"}
