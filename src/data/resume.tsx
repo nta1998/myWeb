@@ -3,14 +3,14 @@ import { FileIcon, HomeIcon } from "lucide-react";
 import proj1 from "../../public/proj1.png"
 import proj2 from "../../public/proj2.b9e419a529f8da4fc8f3.png"
 import proj3 from "../../public/proj3.585e2e1fb797ea00c1a5.png"
-import code from "../../public/data.jpg"
+
 export const DATA = {
   name: "Natanel Liloz",
   initials: "DV",
   url: "https://natanel-liloz.netlify.app/",
   location: "",
   locationLink: "",
-  img:"../../public/data.jpg",
+  img:"/data.jpg",
   description:
     "Full-Stack Developer passionate about technology, currently pursuing a Computer Science degree and seeking opportunities to grow and solve complex problems.",
   summary:`I'm currently studying Computer Science at The Open University.\n I love learning new technologies and tackling complex challenges, and I'm eager to join a dynamic team to make a positive impact on meaningful projects.\n I thrive in collaborative environments and am always ready to explore new ideas and innovate. \nMy goal is to grow professionally and contribute creatively to the tech community and the world.`,
