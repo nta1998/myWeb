@@ -114,11 +114,10 @@ export default function Page() {
                   key={project.title}
                   title={project.title}
                   description={project.description}
-                  tags={project.technologies}
-                  image={project.image}
+                  tags={project.technologies as unknown as string[]}
+                  image={project.image as unknown as string}
                   video={project.video}
-                  links={project.links}
-                />
+                  links={project.links} dates={""}/> 
               </BlurFade>
             ))}
           </div>
