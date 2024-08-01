@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
+    images:DATA.img,
     locale: "en_US",
     type: "website",
   },
