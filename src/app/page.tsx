@@ -7,11 +7,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import TypingAnimation from "@/components/magicui/typing-animation";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { CoolMode } from "@/components/magicui/cool-mode";
-import { BorderBeam } from "@/components/magicui/border-beam";
-import { url } from "inspector";
-import { Resumeb } from "@/components/resumeb";
+import { Resumeb } from "@/components/Resumeb";
 const BLUR_FADE_DELAY = 0.06;
 
 export default function Page() {
