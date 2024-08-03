@@ -7,7 +7,11 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import TypingAnimation from "@/components/magicui/typing-animation";
-
+import { Button, buttonVariants } from "@/components/ui/button";
+import { CoolMode } from "@/components/magicui/cool-mode";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { url } from "inspector";
+import { Resumeb } from "@/components/resumeb";
 const BLUR_FADE_DELAY = 0.06;
 
 export default function Page() {
@@ -17,18 +21,18 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-            <BlurFade delay={BLUR_FADE_DELAY * 3}>
-              <TypingAnimation
-                className="text-2xl text-left font-bold tracking-tighter sm:text-5xl xl:text-5xl/none"
-                duration={100}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋 📟 🎗️`}
-              />
-              <TypingAnimation
-                className="text-md text-left font-bold sm:text-md xl:text-md/none pt-3"
-                duration={30}
-                text={DATA.description}
-              />
-            </BlurFade>
+              <BlurFade delay={BLUR_FADE_DELAY * 3}>
+                <TypingAnimation
+                  className="text-2xl text-left font-bold tracking-tighter sm:text-5xl xl:text-5xl/none"
+                  duration={100}
+                  text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋 📟 🎗️`}
+                />
+                <TypingAnimation
+                  className="text-md text-left font-bold sm:text-md xl:text-md/none pt-3"
+                  duration={30}
+                  text={DATA.description}
+                />
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
               <Avatar className="size-28 border">
@@ -117,7 +121,7 @@ export default function Page() {
                   tags={project.technologies as unknown as string[]}
                   image={project.image as unknown as string}
                   video={project.video}
-                  links={project.links} dates={""}/> 
+                  links={project.links} dates={""} />
               </BlurFade>
             ))}
           </div>
@@ -142,11 +146,13 @@ export default function Page() {
                   className="text-blue-500 hover:underline"
                   target="_blank"
                 >
-                  reach out 
+                  reach out
                 </Link>{"\n"}
                 I look forward to discuss how we can collaborate!
               </p>
             </div>
+            <br />
+            <Resumeb/>
           </BlurFade>
         </div>
       </section>
