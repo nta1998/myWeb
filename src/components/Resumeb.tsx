@@ -19,7 +19,7 @@ export const Resumeb = () => {
                         }}
                     >
                         <Button className="pt-2"><a
-                            href="/natanel_liloz.pdf"
+                            href="/Natanel_Liloz_cv.pdf"
                             download={"natanel liloz"}
                             target="_blank"
                         >Get My Resume
